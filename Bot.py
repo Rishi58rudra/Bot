@@ -8,7 +8,7 @@ def log_command(user_id, target, port, time):
     logging.info(f'User: {user_id}, Target: {target}, Port: {port}, Time: {time}')
 
 # insert your Telegram bot token here
-bot = telebot.TeleBot('6856422076:AAE02TKF5-imZ1_BE6Dljr_Zd2tMFbc8fl0')
+bot = telebot.TeleBot('TELEGRAM_BOT_TOKEN')
 # File to store command logs
 LOG_FILE = "log.txt"
 FREE_USER_FILE="free_users.txt"
